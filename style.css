@@ -663,6 +663,9 @@ p.name {
   font-size: 16px;
   line-height: 1.5;
 }
+p.name a {
+  color: var(--color-medium-gray);
+}
 p.name a:visited {
   color: var(--color-medium-gray);
 }
@@ -897,10 +900,6 @@ footer {
 @media (max-width:961px) {
   body {
     background-color: var(--color-white);
-  }
-  header {
-    position: sticky;
-    top: 0;
   }
   .main-nav ul, .sub-nav ul, .slide-head {
     display: none;
@@ -1386,9 +1385,12 @@ footer {
 }
 }
 @media (max-width: 430px) {
+    header {
+      padding-block: 5px;
+  }
    .noti {
-    padding-inline: 60px;
-    line-height: 1.5;
+    padding: 10px 60px;
+    line-height: 1.4;
   }
    .intro h1 {
     width: 75%;
@@ -1475,6 +1477,7 @@ p.name {
   width: 60%;
 }
 .long1 p {
+   width: 80%;
   font-size: 17px;
 }
 .sect9 > h2 {
@@ -1542,6 +1545,9 @@ p.name {
 .grid-lay-item img {
   width: 70px;
 }
+.split-item p {
+  width: 100%;
+}
 }
 @media (max-width: 325px) {
     .intro > h1 {
@@ -1588,7 +1594,6 @@ p.name {
   width: 70%;
 }
 .long1 p {
-  width: 80%;
   font-size: 14px;
 }
 .grid-span {
